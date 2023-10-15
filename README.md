@@ -11,3 +11,24 @@
 ## Run history
 
 ```cd history && npm run start:dev```
+## Api reference
+
+### POST /users/create
+  Body: {
+    username: string,
+  	password: string,
+    email?: string
+}
+### PUT /users/update
+  Body: {
+    username: string,
+  	password: string,
+    email?: string
+  }
+### GET /users/getAll
+### GET /history/get 
+  Query params: {
+    user_id?: string | number;
+    page?: string | number;
+    show_by?: string | number;
+}
